@@ -223,7 +223,7 @@ resource "aws_iam_role_policy" "ecs_task_s3_policy" {
           "arn:aws:s3:::${var.image_storage_bucket}",
           "arn:aws:s3:::${var.image_storage_bucket}/*"        
         ]
-      }
+      },
         {
         Effect = "Allow"
         Action = ["sqs:ReceiveMessage", "sqs:DeleteMessage", "sqs:GetQueueAttributes"]
