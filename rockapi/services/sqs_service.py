@@ -43,3 +43,4 @@ class SqsService:
         self.sqs.delete_message(
             QueueUrl=self.queue_url,
             ReceiptHandle=message['ReceiptHandle']
+        )
